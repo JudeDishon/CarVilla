@@ -1,0 +1,664 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* nav-start */
+.head{
+    color: white;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+
+}
+.headlink>a{
+    color: white;
+    text-decoration: none;
+}
+.headlink>a:hover{
+    color:#009688;
+}
+
+.headlink{
+  display: flex;
+  gap: 50px;
+}
+a>.icon{
+   margin-right:10px;
+}
+#toggle{
+    display: none;
+}
+.bar{
+    display: none;
+}
+/* nav-end */
+
+/* bg-start */
+.bgimg{
+    background-image:url(../images/hd.avif);
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    text-align: center;
+    color: white;
+}
+.bgcontent>.get{
+    position: relative;
+    top: 100px;
+    font-size: 45px;
+}
+.bgcontent>.explore{
+    position: relative;
+    top: 130px;
+    font-size: 25px;
+}
+.bgcontent>.find{
+    position: relative;
+    top: 160px;
+    font-size: 25px;
+}
+.bgcontent>.btn{
+    position: relative;
+    top: 200px;
+    border: 0;
+    font-size: 20px; 
+    padding: 20px 40px 20px 40px;
+    background-color: #009688;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* bg-end */
+
+/* box start */
+ .box{
+    width: 80%;
+    height: 500px;
+    background-color: white;
+    box-shadow: 2px 2px 5px 5px silver;
+ }
+ .boxmain{
+    display: flex;
+    justify-content: center;
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ .boxflex1{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-around;
+}
+.boxflex1>.year>p,.boxflex1>.style>p,.boxflex1>.make>p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.boxflex1>.year>select,.boxflex1>.style>select,.boxflex1>.make>select{
+    width: 300px;
+     height:40px;
+    font-size: 20px;
+    border: 0;
+    background-color: rgb(216, 208, 208);
+
+}
+.boxflex2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+.boxflex2>.condition>p,.boxflex2>.mode>p,.boxflex2>.price>p{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.boxflex2>.condition>select,.boxflex2>.mode>select,.boxflex2>.price>select{
+    width: 300px;
+    height:40px;
+   font-size: 20px;
+   border: 0;
+   background-color: rgb(216, 208, 208);
+}
+.searchbtn{
+    text-align: center;
+    margin-top: 80px;
+}
+.search{
+    border: 0;
+    font-size: 20px; 
+    padding: 20px 40px 20px 40px;
+    background-color: #009688;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/* box end */
+
+
+/* main car start */
+
+.iconflex1{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    text-align: center;
+}
+.iconflex1>.icon{
+    margin-top: 90px;
+    margin-bottom:30px ;
+}
+.iconflex1>.large{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;  
+}
+.iconflex1>.discover{
+    color: rgb(155, 150, 150);
+}
+.iconflex2{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    text-align: center;
+
+}
+.iconflex2>.icon{
+    margin-top: 90px;
+    margin-bottom:30px ;
+}
+.iconflex2>.large{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;  
+}
+.iconflex2>.discover{
+    color: rgb(155, 150, 150);
+}
+.iconflex3{
+    width: 300px;
+    height: 450px;
+    border: 1px solid black;
+    text-align: center;
+}
+.iconflex3>.icon{
+    margin-top: 90px;
+    margin-bottom:30px ;
+}
+.iconflex3>.large{
+    margin-bottom: 40px;
+    font-size: 20px;
+    font-weight: 500;  
+}
+.iconflex3>.discover{
+    color: rgb(155, 150, 150);
+}
+.iconflex{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+.iconflex1:hover>p, .iconflex1:hover>h4,.iconflex1:hover>i{
+    color: white;
+}
+.iconflex1:hover{
+    background-color: #009688;
+}
+.iconflex2:hover>p, .iconflex2:hover>h4,.iconflex2:hover>i{
+    color: white;
+}
+.iconflex2:hover{
+    background-color: #009688;
+}
+.iconflex3:hover>p, .iconflex3:hover>h4,.iconflex3:hover>i{
+    color: white;
+}
+.iconflex3:hover{
+    background-color: #009688;
+}
+
+/* main car end */
+
+/* brand start */
+ .check{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+.new{
+    text-align: center;
+    font-size: 40px;
+    color: rgb(155, 150, 150);
+    font-weight: 400;
+} 
+.maincarflex{
+    display: flex;
+    gap: 30px;
+}
+.maincarflex2>.superfast{
+margin-bottom: 20px;
+}
+.maincarflex2>.view{
+margin-top:20px;
+border: 0;
+border-radius: 5px;
+padding: 20px;
+background-color: #009688;
+}
+.maincarflex2{
+    margin: 30px;
+}
+.featureflex1{
+    width: 250px;
+    height: 400px;
+    border: 1px solid rgb(155, 150, 150);
+}
+.featureflex1>img{
+    margin: 30px;
+    width: 200px;
+}
+
+.featureflex1>.model2017{
+    margin-bottom: 30px;
+}
+.featureflex1>.bmw{
+    margin-top: 30px;
+
+}
+.featureflex1>p,h4{
+    margin-left: 10px;
+}
+.featureflex{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.fleximg{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* brand end */
+
+.watch{
+    text-align: center;
+    margin: 50px;
+    font-weight: 400;
+    font-size: 40px;
+    color: rgb(155, 150, 150);
+}
+
+/* iconbrandflex start */
+.iconbrandflex1{
+   width: 350px; 
+   height: 400px;
+   border: 1px solid  rgb(155, 150, 150);
+   text-align: center;
+   padding-right: 5px;
+   padding-left: 5px;
+}
+.iconbrandflex{
+ display: flex;
+ justify-content: center;
+ gap: 30px;
+}
+.iconbrandflex1>img{
+margin: 40px;
+}
+.iconbrandflex1>h3{
+    margin: 30px;
+ }
+ .iconbrandflex1:hover{
+    background-color: #009688 ;
+    color:white;
+}
+/* iconbrandflex end */
+
+
+
+/* power brand start */
+.powerbrandflex{
+    margin:100px;
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+}
+/* power brand end */
+
+/* bg dark start */
+.bgdark{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.bgdark>.ftdv1,.ftdv2,.ftdv3,.ftdv4,.ftdv5{
+    margin-top: 80px;
+    line-height: 2;
+}
+#ambox{
+    background-color: black;
+    box-shadow: 0px 0px 5px 0px white;
+    border: 1px solid black;
+    color: white;
+    border-radius: 5px;
+    height: 30px;
+    width: 200px;
+
+}
+.ftdv2>p:hover{
+    position: relative;
+    left: 10px;
+}
+.ftdv3>p:hover{
+    position: relative;
+    left: 10px;
+}
+.ftdv4>p:hover{
+    position: relative;
+    left: 10px;
+}
+/* bg dark end */
+
+
+/* copy flex  start*/
+.copyflex{
+    display: flex;
+    justify-content: space-around;
+    background-color: #009688;
+    color: white;
+    padding: 20px;
+    gap: 350px;
+}
+p>.mail{
+    text-decoration: none;
+    color: white;
+}
+.copyicon>.fd{
+    margin-right: 10px;
+}
+
+
+/* copy flex end */
+
+@media screen and (max-width:768px){
+    /* nav-start */
+    .headlink{
+        display: none;
+    }
+    .bar{
+        display: flex;
+    }
+    #toggle:checked ~ .headlink{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        gap: 10px;
+        top: 68px;
+        left: 0px;
+        background-color: black;
+        width: 100%;
+    }
+    .headlink>a{
+        margin-left: 20px;
+    }
+   
+    /* nav-end */
+
+
+    /* bg-start */
+    .bgcontent>.get{
+        font-size: 30px;
+    }
+    .bgcontent>.explore{
+      font-size: 17px;   
+    }
+    .bgcontent>.find{
+        font-size: 17px;   
+      }
+    .bgcontent>.btn{
+      padding: 10px;
+    }
+    /* bg-end */
+
+    /* box start */
+    .box{
+        height: 900px;
+    }
+    .boxflex1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 50px;
+        align-items:start; 
+        margin-left: 30px;
+        gap: 20px;
+    }
+    .boxflex1>.year>select,.boxflex1>.style>select,.boxflex1>.make>select{
+        width: 500px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+       
+    }
+       .boxflex1>.year>p,.boxflex1>.style>p,.boxflex1>.make>p{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .boxflex2{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        align-items:start; 
+        margin-left: 30px;
+        gap: 20px; 
+    }
+    .boxflex2>.condition>p,.boxflex2>.mode>p,.boxflex2>.price>p{
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+    .boxflex2>.condition>select,.boxflex2>.mode>select,.boxflex2>.price>select{
+        width: 500px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+       background-color: rgb(216, 208, 208);
+    }
+   
+   
+    /* box end */
+
+    /* main car start */
+    .iconflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .iconflex1,.iconflex2,.iconflex3{
+        width: 80%;
+    }
+    .maincarflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .maincarflex1>img{
+        width: auto;
+    }
+    /* main car end */
+
+    /*brand car star*/
+    .featureflex1{
+        width: 80%;
+    }
+    .featureflex{
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    /* brand end */
+   
+/* icon brand start  */
+
+    .iconbrandflex{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+       }
+    .iconbrandflex1{
+         width: 80%;
+    }
+ /* icon brand  */
+   
+
+
+ /* <!-- power brand end --> */
+
+
+ .powerbrandflex{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+/* <!-- power brand end --> */
+
+ /* bg dark start */
+.bgdark>.ftdv1,.ftdv2,.ftdv3,.ftdv4,.ftdv5{
+    margin-top: 30px;
+    line-height: 2.9;
+    margin-left: 50px;
+}
+.bgdark{
+    width: 100%;
+    height:1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    overflow: hidden;
+}
+/* bg dark end */
+
+
+/* copy flex  start*/
+.copyflex{
+    display: flex;
+    justify-content: space-between;
+    gap: 0;
+}
+
+
+/* copy flex  end*/
+}
+
+/* media -425 start */
+@media screen and (max-width:425px){
+    .boxflex1>.year>select,.boxflex1>.style>select,.boxflex1>.make>select{
+        width: 270px;
+        height:40px;
+       font-size: 20px;
+       border: 0; 
+    } 
+    .boxflex2>.condition>select,.boxflex2>.mode>select,.boxflex2>.price>select{
+        width: 270px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+       background-color: rgb(216, 208, 208);
+    }
+    .maincarflex1>img{
+        width:300px;
+    }
+    .watch{
+        text-align: center;
+        margin: 50px;
+        font-weight: 500;
+        font-size: 30px;
+        color: rgb(155, 150, 150);
+    }
+    .powerbrandflex{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bgdark{
+    width: 100%;
+    height:1900px;
+    display: flex;
+    flex-direction: column;
+}
+    /* copy flex  start*/
+    .copyflex{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    /* copy flex  end*/
+}
+/* media - 425 end */
+
+/* media -375 start */
+@media screen and (max-width:375px){
+    .boxflex1>.year>select,.boxflex1>.style>select,.boxflex1>.make>select{
+        width: 250px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+    }  
+    .boxflex2>.condition>select,.boxflex2>.mode>select,.boxflex2>.price>select{
+        width: 250px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+       background-color: rgb(216, 208, 208);
+    } 
+    .watch{
+        text-align: center;
+        margin: 50px;
+        font-weight: 500;
+        font-size: 26px;
+        color: rgb(155, 150, 150);
+    }
+
+
+}
+/* media - 375 end */
+
+/* media -320 start */
+@media screen and (max-width:320px){
+    .boxflex1>.year>select,.boxflex1>.style>select,.boxflex1>.make>select{
+        width: 200px;
+        height:40px;
+       font-size: 20px;
+       border: 0;
+    }   
+
+.bgcontent>.btn{
+    position: relative;
+    top: 180px;
+}
+.boxflex2>.condition>select,.boxflex2>.mode>select,.boxflex2>.price>select{
+    width: 200px;
+    height:40px;
+   font-size: 20px;
+   border: 0;
+   background-color: rgb(216, 208, 208);
+}
+.watch{
+    text-align: center;
+    margin: 50px;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(155, 150, 150);
+}
+}
+/* media -320 end */
